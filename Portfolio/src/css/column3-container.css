@@ -1,0 +1,40 @@
+.column3-container {
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    width: 16vmax;
+    max-width: 20vmax;
+    border-left: grey solid 1px;
+}
+.menu {
+    margin-left: 2vmax;
+    position: sticky;
+    top: 10vmax;
+    font-size: 1.75vmax;
+    font-weight: bold;
+    overflow: hidden;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: max-content;
+    padding-left: 0.75vmax;
+    padding-right: 0.75vmax;
+    line-height: 5.5vmax;
+}
+.menu a:hover {
+    border-radius: 30%;
+    background-clip: border-box;
+    background-color: #ada7a7;
+    font-size: 2.25vmax;
+}
+.menu a:focus {
+    font-size: 1.75vmax;
+}
+@media (max-width: 480px){
+    .column3-container {
+        display: none;
+    }
+}

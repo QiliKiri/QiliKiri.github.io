@@ -1,0 +1,121 @@
+.column2-container {
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    width: 58vmax;
+    max-width: 60vmax;
+}
+.column2-container section {
+    clear: both;
+    margin-bottom: 15px;
+}
+.section-name-container {
+    background-color: #3b3838;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    display: block;
+    padding-left: 1vmax;
+    font-family: "Palatino Linotype", serif;
+    font-weight: bold;
+    color: white;
+}
+.section-content-container {
+    float: left;
+    display: block;
+    padding: 5px;
+}
+.section-content-container dd {
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
+.project {
+}
+.project-name-container {
+    display: flex;
+    flex-direction: row;
+    clear: both;
+    font-size: 1.75vmax;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin: 0;
+}
+.project-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project-image-container img {
+    height: 20vmax;
+    width: 20vmax;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
+.source-code {
+    font-style: italic;
+    font-size: 1.25vmax;
+    color: green;
+}
+.picture-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 70vh;
+    width: 50vw;
+    z-index: 3;
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/minesweeper.png");
+    border: grey solid 1px;
+    opacity: 1;
+}
+.maskBackground {
+    background-color: black;
+    opacity: 0.85;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: none;
+}
+
+.window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 70vh;
+    width: 50vw;
+    z-index: 3;
+    background-color: white;
+    border: solid 2px grey;
+}
+.window .project-name {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.window .content {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.active {
+    display: block;
+}
+
+
+
+
+

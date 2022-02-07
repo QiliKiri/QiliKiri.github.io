@@ -1,0 +1,25 @@
+.column1-container {
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    width: 14vmax;
+    max-width: 20vmax;
+    border-right: grey solid 1px;
+}
+.personal-information-container {
+    position: sticky;
+    top: 10vmax;
+    font-size: 1.35vmax;
+    overflow: hidden;
+}
+.column1-container .name {
+    font-family: "Brush Script MT", cursive;
+    font-size: 3vmax;
+    margin: 0;
+}
+@media (max-width: 480px){
+    .column1-container {
+        display: none;
+    }
+}

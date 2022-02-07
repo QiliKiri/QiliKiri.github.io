@@ -1,0 +1,65 @@
+header {
+    background-color: grey;
+    height: 25vmin;
+    margin-bottom: 3vmax;
+    position: relative;
+}
+body {
+    background-color: white;
+    color: black;
+    font-size: 1.25vmax;
+}
+footer {
+    background-color: grey;
+    padding-top: 3vmax;
+    padding-bottom: 3vmax;
+    text-align: center;
+    border-top-color: grey;
+    border-top-style: solid;
+    border-top-width: 2px;
+    font-size: larger;
+}
+a {
+    color: black;
+}
+
+@media (min-width: 480px){
+    .columns-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width: 480px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        background-color: grey;
+        height: max-content;
+    }
+    .hamburger ul {
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+    .hamburger li {
+        float: left;
+        list-style-type: none;
+        margin: 0;
+        padding: 1%;
+        background-color: grey;
+    }
+    .hamburger li:hover {
+        background-color: black;
+    }
+    .hamburger a {
+        color: white;
+        text-decoration: none;
+    }
+}
+@media (min-width: 480px) {
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,0 +1,65 @@
+.to-top-btn {
+    display: block;
+    background-color: #25192f;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: 1%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 3;
+    visibility: hidden;
+    font-size: 0.75vmax;
+}
+.to-top-btn:hover {
+    background-color: grey;
+}
+
+.dark-or-light-btn {
+    position: fixed;
+    top: 1.25vmax;
+    right: 1.25vmax;
+    background-color: unset;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    font-size: 2vmax;
+    z-index: 3;
+}
+
+.picture-container .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.5%;
+    margin: 0;
+    background-color: unset;
+    border-radius: 10%;
+    font-size: larger;
+    color: white;
+}
+.picture-container .close-btn:hover {
+    background-clip: padding-box;
+    background-color: red;
+    cursor: pointer;
+}
+
+.open-window {
+    display: flex;
+    height: max-content;
+    align-self: center;
+    font-size: 0.5vmax;
+    margin-left: 1.75vmax;
+}
+.window .content .close-btn {
+    position: absolute;
+    bottom: 3%;
+    justify-self: center;
+    padding: 1.5%
+}
+
+
+
+
+
