@@ -76,15 +76,17 @@
                 </dl>
             </section>
             <section id="portfolio">
-                <div class="section-name-container">
+                <div class="section-name-container portfolio" onclick="collapseAll('project')" title="Click to expand/collapse all">
                     <h2>Portfolio</h2>
                 </div>
 
+                <button class="collapsible">Minesweeper</button>
                 <div class="project">
                     <div class="project-name-container">
                         <p>Minesweeper</p>
                         <button onclick="popUpWindow('minesweeper')" class="open-window">More</button>
                     </div>
+
                     <div id="minesweeper" class="window">
                         <div class="project-name">
                             <h1>Minesweeper</h1>
@@ -94,16 +96,19 @@
                             <button class="close-btn" onclick="popUpWindow('minesweeper')">Close</button>
                         </div>
                     </div>
+
                     <div class="project-image-container">
                         <img src="assets/minesweeper.png" alt="minesweeper project" onclick="enlargePicture(this.src)">
                     </div>
                 </div>
 
+                <button class="collapsible">Calculator</button>
                 <div class="project">
                     <div class="project-name-container">
                         <p>Calculator</p>
                         <button onclick="popUpWindow('calculator')" class="open-window">More</button>
                     </div>
+
                     <div id="calculator" class="window">
                         <div class="project-name">
                             <h1>Calculator</h1>
@@ -113,16 +118,19 @@
                             <button class="close-btn" onclick="popUpWindow('calculator')">Close</button>
                         </div>
                     </div>
+
                     <div class="project-image-container">
                         <img src="assets/calculator.png" alt="calculator project" onclick="enlargePicture(this.src)">
                     </div>
                 </div>
 
+                <button class="collapsible">Budget</button>
                 <div class="project">
                     <div class="project-name-container">
                         <p>Budget</p>
                         <button onclick="popUpWindow('budget')" class="open-window">More</button>
                     </div>
+
                     <div id="budget" class="window">
                         <div class="project-name">
                             <h1>Budget</h1>
@@ -132,6 +140,7 @@
                             <button class="close-btn" onclick="popUpWindow('budget')">Close</button>
                         </div>
                     </div>
+
                     <div class="project-image-container">
                         <img src="assets/budget_app.png" alt="budget project" onclick="enlargePicture(this.src)">
                         <img src="assets/budget_app2.png" alt="budget project" onclick="enlargePicture(this.src)">
@@ -167,6 +176,7 @@
         <script src="js/darkLightMode.js"></script>
         <script src="js/enlargePicture.js"></script>
         <script src="js/popUpWindow.js"></script>
+        <script src="js/collapsible.js"></script>
     </div>
 </body>
 </html>

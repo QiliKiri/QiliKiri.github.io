@@ -30,7 +30,30 @@
     padding-top: 1vmax;
     padding-bottom: 1vmax;
 }
+
+.collapsible {
+    text-align: left;
+    background-color: #504c4c;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    font-size: 1.25vmax;
+}
+.collapsible:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.collapsible:after {
+    content: "\02795";
+    float: right;
+}
+.expand:after {
+    content: "\2796";
+}
 .project {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 .project-name-container {
     display: flex;
