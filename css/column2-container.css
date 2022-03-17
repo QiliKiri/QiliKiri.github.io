@@ -1,10 +1,17 @@
-.column2-container {
-    margin-left: 1vmax;
-    margin-right: 1vmax;
-    padding-left: 1vmax;
-    padding-right: 1vmax;
-    width: 58vmax;
-    max-width: 60vmax;
+@media (min-width: 480px) {
+    .column2-container {
+        margin-left: 1vmax;
+        margin-right: 1vmax;
+        padding-left: 1vmax;
+        padding-right: 1vmax;
+        width: 58vmax;
+        max-width: 60vmax;
+    }
+}
+@media (min-width: 480px) {
+    .column2-container {
+        width: 100%;
+    }
 }
 .column2-container section {
     clear: both;
@@ -25,6 +32,7 @@
     float: left;
     display: block;
     padding: 5px;
+    margin: 5px;
 }
 .section-content-container dd {
     padding-top: 1vmax;
@@ -37,7 +45,6 @@
     color: white;
     padding: 8px;
     width: 100%;
-    font-size: 1.25vmax;
 }
 .collapsible:hover {
     cursor: pointer;
@@ -81,24 +88,75 @@
     font-size: 1.25vmax;
     color: green;
 }
-.picture-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 70vh;
-    width: 50vw;
-    z-index: 3;
-    display: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../assets/minesweeper.png");
-    border: grey solid 1px;
-    opacity: 1;
+@media (min-width: 480px) {
+    .picture-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 70vh;
+        width: 50vw;
+        z-index: 3;
+        display: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../assets/minesweeper.png");
+        border: grey solid 1px;
+        opacity: 1;
+    }
+    .window {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 70vh;
+        width: 50vw;
+        z-index: 3;
+        background-color: #eef1e5;
+        border: solid 2px grey;
+    }
 }
+@media (max-width: 480px) {
+    .picture-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 70%;
+        width: 90%;
+        z-index: 3;
+        display: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../assets/minesweeper.png");
+        border: grey solid 1px;
+        opacity: 1;
+    }
+    .window {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 70vh;
+        width: 90%;
+        z-index: 3;
+        background-color: #eef1e5;
+        border: solid 2px grey;
+    }
+}
+
 .maskBackground {
     background-color: black;
     opacity: 0.85;
@@ -113,20 +171,6 @@
     display: none;
 }
 
-.window {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 70vh;
-    width: 50vw;
-    z-index: 3;
-    background-color: #eef1e5;
-    border: solid 2px grey;
-}
 .window .project-name {
     display: flex;
     justify-content: center;

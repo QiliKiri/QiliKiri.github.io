@@ -15,17 +15,30 @@
 .to-top-btn:hover {
     background-color: grey;
 }
-
-.dark-or-light-btn {
-    position: fixed;
-    top: 1.25vmax;
-    right: 1.25vmax;
-    background-color: unset;
-    border-radius: 50%;
-    color: black;
-    cursor: pointer;
-    font-size: 2vmax;
-    z-index: 3;
+@media (min-width: 480px) {
+    .dark-or-light-btn {
+        position: fixed;
+        top: 1.25vmax;
+        right: 1.25vmax;
+        background-color: unset;
+        border-radius: 50%;
+        color: black;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+@media (max-width: 480px) {
+    .dark-or-light-btn {
+        position: fixed;
+        background-color: unset;
+        border-radius: 50%;
+        color: black;
+        cursor: pointer;
+        transform: scale(0.75);
+        right: 0;
+        top: 0;
+        z-index: 3;
+    }
 }
 
 .picture-container .close-btn {

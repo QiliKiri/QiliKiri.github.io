@@ -1,23 +1,7 @@
-header {
-    background-color: grey;
-    height: 25vmin;
-    margin-bottom: 3vmax;
-    position: relative;
-}
 body {
     background-color: white;
     color: black;
     font-size: 1.25vmax;
-}
-footer {
-    background-color: grey;
-    padding-top: 3vmax;
-    padding-bottom: 3vmax;
-    text-align: center;
-    border-top-color: grey;
-    border-top-style: solid;
-    border-top-width: 2px;
-    font-size: larger;
 }
 a {
     color: black;
@@ -28,11 +12,33 @@ a {
         display: flex;
         flex-direction: row;
     }
+    header {
+        background-color: grey;
+        height: 25vmin;
+        margin-bottom: 3vmax;
+        position: relative;
+    }
+    footer {
+        background-color: grey;
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        text-align: center;
+        border-top-color: grey;
+        border-top-style: solid;
+        border-top-width: 2px;
+        font-size: larger;
+    }
+    .hamburger {
+        display: none;
+    }
+    .contact-mobile {
+        display: none;
+    }
 }
 @media (max-width: 480px) {
     .hamburger {
-        display: block;
-        position: absolute;
+        position: sticky;
+        display: flex;
         width: 100%;
         top: 0;
         background-color: grey;
@@ -42,13 +48,15 @@ a {
         margin: 0;
         padding: 0;
         text-align: start;
+        width: 100%;
     }
     .hamburger li {
         float: left;
         list-style-type: none;
-        margin: 0;
-        padding: 1%;
+        margin: 2px;
+        padding: 3px;
         background-color: grey;
+        color: white;
     }
     .hamburger li:hover {
         background-color: black;
@@ -57,9 +65,13 @@ a {
         color: white;
         text-decoration: none;
     }
-}
-@media (min-width: 480px) {
-    .hamburger {
+    header {
         display: none;
+    }
+    footer {
+        display: none;
+    }
+    .contact-mobile {
+        clear: top;
     }
 }
