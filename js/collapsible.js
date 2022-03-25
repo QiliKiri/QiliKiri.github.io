@@ -12,12 +12,21 @@ for (let i = 0; i < coll.length; i++) {
         }
     })
 }
-
+let expandALL = true;
 function collapseAll(content) {
     let coll = document.getElementsByClassName("collapsible");
     for (let i = 0; i < coll.length; i++) {
         if (coll[i].nextElementSibling.classList.contains(content)) {
-            coll[i].click();
+            if (expandALL) {
+                if (!coll[i].classList.contains("expand")) {
+                    coll[i].click();
+                }
+            }else {
+                if (coll[i].classList.contains("expand")) {
+                    coll[i].click();
+                }
+            }
         }
     }
+    expandALL = !expandALL;
 }

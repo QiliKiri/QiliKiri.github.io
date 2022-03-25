@@ -2,7 +2,7 @@ body {
     background-color: white;
     color: black;
     font-size: 1.25vmax;
-    font-size: max(1.25vmax, 17px);
+    font-size: max(1.25vmax, 18px);
 }
 a {
     color: black;
@@ -13,13 +13,13 @@ a {
         display: flex;
         flex-direction: row;
     }
-    header {
+    .header {
         height: 300px;
         height: max(24vmax, 300px);
         width: 100%;
         margin-bottom: 3vmax;
     }
-    header img {
+    .header img {
         height: inherit;
         width: inherit;
         object-fit: cover;
@@ -71,7 +71,7 @@ a {
         color: white;
         text-decoration: none;
     }
-    header {
+    .header {
         display: none;
     }
     footer {
