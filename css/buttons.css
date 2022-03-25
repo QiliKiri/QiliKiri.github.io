@@ -11,6 +11,7 @@
     z-index: 3;
     visibility: hidden;
     font-size: 0.75vmax;
+    font-size: max(0.75vmax, 16px);
 }
 .to-top-btn:hover {
     background-color: grey;
@@ -62,7 +63,6 @@
     display: flex;
     height: max-content;
     align-self: center;
-    font-size: 0.5vmax;
     margin-left: 1.75vmax;
 }
 .window .content .close-btn {

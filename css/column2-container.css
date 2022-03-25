@@ -4,91 +4,8 @@
         margin-right: 1vmax;
         padding-left: 1vmax;
         padding-right: 1vmax;
-        width: 58vmax;
-        max-width: 60vmax;
-    }
-}
-@media (min-width: 480px) {
-    .column2-container {
         width: 100%;
     }
-}
-.column2-container section {
-    clear: both;
-    margin-bottom: 15px;
-}
-.section-name-container {
-    background-color: #3b3838;
-    border-style: solid;
-    border-width: 2px;
-    border-color: grey;
-    display: block;
-    padding-left: 1vmax;
-    font-family: "Palatino Linotype", serif;
-    font-weight: bold;
-    color: white;
-}
-.section-content-container {
-    float: left;
-    display: block;
-    padding: 5px;
-    margin: 5px;
-}
-.section-content-container dd {
-    padding-top: 1vmax;
-    padding-bottom: 1vmax;
-}
-
-.collapsible {
-    text-align: left;
-    background-color: #504c4c;
-    color: white;
-    padding: 8px;
-    width: 100%;
-}
-.collapsible:hover {
-    cursor: pointer;
-    background-color: grey;
-}
-.collapsible:after {
-    content: "\02795";
-    float: right;
-}
-.expand:after {
-    content: "\2796";
-}
-.project {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-.project-name-container {
-    display: flex;
-    flex-direction: row;
-    clear: both;
-    font-size: 1.75vmax;
-    border-bottom-color: grey;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    margin: 0;
-}
-.project-image-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.project-image-container img {
-    height: 20vmax;
-    width: 20vmax;
-    padding-top: 1vmax;
-    padding-bottom: 1vmax;
-}
-.source-code {
-    font-style: italic;
-    font-size: 1.25vmax;
-    color: green;
-}
-@media (min-width: 480px) {
     .picture-container {
         position: fixed;
         top: 0;
@@ -185,7 +102,84 @@
 .active {
     display: block;
 }
+.column2-container section {
+    clear: both;
+    margin-bottom: 15px;
+}
+.section-name-container {
+    background-color: #3b3838;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    display: block;
+    padding-left: 1vmax;
+    font-family: "Palatino Linotype", serif;
+    font-weight: bold;
+    color: white;
+}
+.section-name-container h2 {
+    margin: 10px 0 10px 0;
+}
+.section-content-container {
+    float: left;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.section-content-container dd {
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
 
+.collapsible {
+    text-align: left;
+    background-color: #504c4c;
+    color: white;
+    padding: 8px;
+    width: 100%;
+}
+.collapsible:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.collapsible:after {
+    content: "\02795";
+    float: right;
+}
+.expand:after {
+    content: "\2796";
+}
+.project {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.project-name-container {
+    display: flex;
+    flex-direction: row;
+    clear: both;
+    font-size: 1.75vmax;
+    font-size: max(1.75vmax, 20px);
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin: 0;
+}
+.project-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project-image-container img {
+    height: 20vmax;
+    width: 20vmax;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
+.source-code {
+    font-style: italic;
+    color: green;
+}
 
 
 

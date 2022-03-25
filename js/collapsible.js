@@ -3,6 +3,7 @@ let coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         let content = this.nextElementSibling;
+        // change the "+/-"
         this.classList.toggle("expand");
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
@@ -11,8 +12,6 @@ for (let i = 0; i < coll.length; i++) {
         }
     })
 }
-let sectionNames = document.getElementsByClassName("section-name-container");
-
 
 function collapseAll(content) {
     let coll = document.getElementsByClassName("collapsible");

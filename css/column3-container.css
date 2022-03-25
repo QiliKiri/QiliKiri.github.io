@@ -3,7 +3,7 @@
     margin-right: 1vmax;
     padding-left: 1vmax;
     padding-right: 1vmax;
-    width: 16vmax;
+    min-width: 16vmax;
     max-width: 20vmax;
     border-left: grey solid 1px;
 }
@@ -12,8 +12,9 @@
     position: sticky;
     top: 10vmax;
     font-size: 1.75vmax;
+    font-size: max(1.75vmax, 20px);
     font-weight: bold;
-    overflow: hidden;
+    overflow: fragments;
 }
 .menu-item {
     display: flex;
@@ -29,9 +30,11 @@
     background-clip: border-box;
     background-color: #ada7a7;
     font-size: 2.25vmax;
+    font-size: max(2.25vmax, 24px);
 }
 .menu a:focus {
     font-size: 1.75vmax;
+    font-size: max(1.75vmax, 20px);
 }
 @media (max-width: 480px){
     .column3-container {

@@ -2,6 +2,7 @@ body {
     background-color: white;
     color: black;
     font-size: 1.25vmax;
+    font-size: max(1.25vmax, 17px);
 }
 a {
     color: black;
@@ -13,10 +14,15 @@ a {
         flex-direction: row;
     }
     header {
-        background-color: grey;
-        height: 25vmin;
+        height: 300px;
+        height: max(24vmax, 300px);
+        width: 100%;
         margin-bottom: 3vmax;
-        position: relative;
+    }
+    header img {
+        height: inherit;
+        width: inherit;
+        object-fit: cover;
     }
     footer {
         background-color: grey;

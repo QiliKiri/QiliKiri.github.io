@@ -3,19 +3,19 @@
     margin-right: 1vmax;
     padding-left: 1vmax;
     padding-right: 1vmax;
-    width: 14vmax;
+    min-width: 14vmax;
     max-width: 20vmax;
     border-right: grey solid 1px;
 }
 .personal-information-container {
     position: sticky;
     top: 10vmax;
-    font-size: 1.35vmax;
     overflow: hidden;
 }
 .column1-container .name {
     font-family: "Brush Script MT", cursive;
     font-size: 3vmax;
+    font-size: max(3vmax, 28px);
     margin: 0;
 }
 @media (max-width: 480px){
