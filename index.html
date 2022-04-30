@@ -88,6 +88,29 @@
                     <h2>Portfolio</h2>
                 </div>
 
+                <button class="collapsible">Todo List</button>
+                <div class="project">
+                    <div class="project-name-container">
+                        <p>Todo List</p>
+                        <button onclick="popUpWindow('todolist')" class="open-window">More</button>
+                    </div>
+
+                    <div id="todolist" class="window">
+                        <div class="project-name">
+                            <h1>Todo List</h1>
+                        </div>
+                        <div class="content">
+                            <a href="https://qilikiri.github.io/React-Project/" title="View the app" target="_blank">Take a look!</a><br>
+                            <a href="https://github.com/QiliKiri/React-Project" title="View source code in GitHub" target="_blank" class="source-code">[source code]</a>
+                            <button class="close-btn" onclick="popUpWindow('todolist')">Close</button>
+                        </div>
+                    </div>
+
+<!--                    <div class="project-image-container">-->
+<!--                        <img src="assets/calculator.png" alt="calculator project" onclick="enlargePicture(this.src)">-->
+<!--                    </div>-->
+                </div>
+
                 <button class="collapsible">Minesweeper</button>
                 <div class="project">
                     <div class="project-name-container">

@@ -96,8 +96,8 @@
 .window .content {
     clear: both;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .active {
     display: block;
